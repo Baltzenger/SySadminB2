@@ -3,20 +3,21 @@
 <head>
     <title>Super page de Noel</title>
 </head>
+<meta charset="UTF-8">
 <body>
 	<bgsound src="https://youtu.be/pdlWrDSTQ4Q" loop=-1>
 
-<div id="compte_a_rebours"><noscript>Fin de l'évènement le 19 Décembre 2017 19h00</noscript></div>
+<div id="compte_a_rebours"><noscript>Fin de l'évènement le 1 Janvier 2018 00h00</noscript></div>
  <script type="text/javascript">
  function compte_a_rebours()
  {
       var compte_a_rebours = document.getElementById("compte_a_rebours");
   
       var date_actuelle = new Date();
-      var date_evenement = new Date("Dec 19 19:00:00 2017");
+      var date_evenement = new Date("Jan 1 00:00:00 2018");
       var total_secondes = (date_evenement - date_actuelle) / 1000;
  
-     var prefixe = "Compte à rebours terminé dans ";
+     var prefixe = "Compte à rebours du nouvel an ";
      if (total_secondes < 0)
      {
          prefixe = "Compte à rebours terminé il y a "; // On modifie le préfixe si la différence est négatif
